@@ -1,12 +1,49 @@
-.cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+@font-face {
+    font-family: 'Acme';
+    src: url('./Acme-Regular.ttf');
 }
 
-.bannerStyles {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+#mainTitle {
+    color: #AC3791;
+    font-size: 60pt;
+    font-family: Acme;
+}
+
+#secondaryText {
+    color: #E3F8FE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#navBarLogo {
+    width: 200px;
+    height: 200px;
+}
+
+#getStartedBtn {
+    background-color: #AC3791;
+}
+
+#getStartedText {
+    font-family: Acme;
+    color: white;
+}
+
+#signUpTitle {
+    color: #AC3791;
+    font-family: Acme;
+}
+
+#subscribeBtn {
+    background-color: #505F98;
+    color: white;
+}
+
+#sectionHeading {
+    color: #AC3791;
+    font-family: Acme;
+}
+
+#beliefs {
+    font-family: Acme;
 }
