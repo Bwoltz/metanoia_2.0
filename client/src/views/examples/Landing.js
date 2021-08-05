@@ -39,9 +39,6 @@ import Testimonial1 from "assets/img/theme/testimonial1.svg";
 import Testimonial2 from "assets/img/theme/testimonial2.svg";
 import Testimonial3 from "assets/img/theme/testimonial3.svg";
 
-// css
-import './landing.css';
-
 const items = [
   {
     src: Testimonial1,
