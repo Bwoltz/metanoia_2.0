@@ -35,7 +35,6 @@ import ForgotPassword from "views/examples/ForgotPassword.js";
 
 import ReactGA from 'react-ga';
 const TRACKING_ID = "UA-199983595-3";
-ReactGA.initialize(TRACKING_ID);
 
 function Index ()  {
   useEffect(() => {
