@@ -17,9 +17,6 @@ import JoyceImage from "assets/img/theme/joyce.jpg";
 import CassidyImage from "assets/img/theme/cassidy.png";
 import BrettImage from "assets/img/theme/brett.png";
 
-// css
-import './about.css';
-
 class About extends React.Component {
   state = {};
   componentDidMount() {
