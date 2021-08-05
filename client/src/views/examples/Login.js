@@ -42,12 +42,21 @@ import SimpleFooter from "components/Footers/SimpleFooter.js";
 import GoogleImage from "assets/img/icons/common/google.svg";
 import GithubImage from "assets/img/icons/common/github.svg";
 
+import Event from './EventTracking';
+
+
 class Login extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
   }
+
+  onClickSignIn(){
+    //run only if sign in happens
+    Event("Button", "Login Button", "Login")
+  }
+
   render() {
     return (
       <>
@@ -153,6 +162,7 @@ class Login extends React.Component {
                             className="my-4"
                             color="primary"
                             type="button"
+                            onClick={ () => {this.onClickSignIn()} }
                           >
                             Sign in
                           </Button>

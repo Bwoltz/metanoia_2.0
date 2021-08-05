@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
@@ -33,9 +33,22 @@ import Contact from "views/examples/Contact.js";
 import Subscribe from "views/examples/Subscribe.js";
 import ForgotPassword from "views/examples/ForgotPassword.js";
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-199983595-3";
+ReactGA.initialize(TRACKING_ID);
 
-ReactDOM.render(
-  <BrowserRouter>
+function Index ()  {
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
+  useEffect(() => {
+   console.log(window.location.pathname)
+  })
+
+  return (
+    <BrowserRouter>
     <Switch>
       <Route path="/" exact render={props => <Landing {...props} />} />
       <Route
@@ -76,6 +89,12 @@ ReactDOM.render(
       />
       <Redirect to="/" />
     </Switch>
-  </BrowserRouter>,
+  </BrowserRouter>
+  )
+
+}
+
+ReactDOM.render(
+  <Index />,
   document.getElementById("root")
 );

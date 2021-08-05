@@ -39,6 +39,8 @@ import Testimonial1 from "assets/img/theme/testimonial1.svg";
 import Testimonial2 from "assets/img/theme/testimonial2.svg";
 import Testimonial3 from "assets/img/theme/testimonial3.svg";
 
+import Event from './EventTracking';
+
 const items = [
   {
     src: Testimonial1,
@@ -101,6 +103,7 @@ class Landing extends React.Component {
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
                           href="register"
+                          onClick={()=> Event("Button", "Get Started Button", "Page Transfer")}
                         >
                           <span className="btn-inner--text">Get Started</span>
                         </Button>
@@ -157,7 +160,10 @@ class Landing extends React.Component {
                             className="mt-4"
                             color="primary"
                             href=""
-                            onClick={() => this.toggleModal("comingSoonModal")}
+                            onClick={() => {
+                              this.toggleModal("comingSoonModal")
+                              Event("Button", "Identity Explore", "Modal")
+                              }}
                           >
                             Explore
                           </Button>
@@ -228,9 +234,10 @@ class Landing extends React.Component {
                             className="mt-4"
                             color="success"
                             href=""
-                            onClick={() =>
+                            onClick={() =>{
                               this.toggleModal("comingSoonModal_1")
-                            }
+                              Event("Button", "Diversity Explore", "Modal")
+                            }}
                           >
                             Explore
                           </Button>
@@ -301,9 +308,11 @@ class Landing extends React.Component {
                             className="mt-4"
                             color="warning"
                             href=""
-                            onClick={() =>
+                            onClick={() =>{
                               this.toggleModal("comingSoonModal_2")
-                            }
+                              Event("Button", "Gender Explore", "Modal")
+
+                            }}
                           >
                             Explore
                           </Button>
@@ -380,6 +389,7 @@ class Landing extends React.Component {
                       color="success"
                       type="button"
                       href="subscribe"
+                      onClick={Event("Button", "Sign Up For Newsletter", "Newsletter")}
                     >
                       <span className="nav-link-inner--text ml-1">
                         Sign Up Here
