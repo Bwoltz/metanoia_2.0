@@ -1,31 +1,4 @@
 #heading {
-  color: #ac3791;
-  font-family: Acme;
-}
-
-.cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.bannerStyles3 {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.imageStyles {
-  height: 40px;
-  width: 40px;
-  float: "left";
-}
-
-.contactMethod {
-  padding-bottom: 20px;
-}
-
-.methodLabel {
-  padding: 15px;
+    color: #AC3791;
+    font-family: Acme;
 }

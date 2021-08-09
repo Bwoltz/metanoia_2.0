@@ -11,13 +11,13 @@ import SimpleFooter from "components/Footers/CardsFooter.js";
 import Banner from "assets/img/theme/website-image.png";
 import AsthaImage from "assets/img/theme/astha.JPG";
 import JessImage from "assets/img/theme/jessica.png";
-import TanveeImage from "assets/img/theme/tanvee.jpg";
+import TanveeImage from "assets/img/theme/tanvee.JPG";
 import JoyceImage from "assets/img/theme/joyce.jpg";
 import CassidyImage from "assets/img/theme/cassidy.png";
 import BrettImage from "assets/img/theme/brett.png";
 
 // css
-import "./about.css";
+import './about.css';
 
 class About extends React.Component {
   state = {};
@@ -35,12 +35,7 @@ class About extends React.Component {
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-200">
               <div className="shape shape-style-1 shape-default cont">
-                <img
-                  alt="..."
-                  src={Banner}
-                  className="bannerStyles2"
-                  style={{ opacity: 0.3 }}
-                />
+                <img alt="..." src={Banner} className="bannerStyles2" />
               </div>
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
@@ -49,10 +44,7 @@ class About extends React.Component {
                       <h1 id="heading" className="display-3 text-white">
                         About Us{" "}
                       </h1>
-                      <p
-                        className="lead text-white"
-                        style={{ margin: 15 }} //fontWeight: "bold" }}
-                      >
+                      <p className="lead text-white" style={{ margin: 15 }}>
                         Metanoia is an upcoming EdTech startup that seeks to put
                         social issues at the forefront of children’s lives
                         through our virtual interactive library. Our website
@@ -66,37 +58,48 @@ class About extends React.Component {
                   </Row>
                 </div>
               </Container>
+              {/* SVG separator */}
+              {/* <div className="separator separator-bottom separator-skew">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 2560 100"
+                  x="0"
+                  y="0"
+                >
+                  <polygon
+                    className="fill-white"
+                    points="2560 0 2560 100 0 100"
+                  />
+                </svg>
+              </div> */}
             </section>
             {/* Founder Intros */}
-            <section
-              style={{ backgroundColor: "#FCFAD9" }}
-              className="section section-lg"
-            >
-              <Container>
-                <Row className="justify-content-center text-center mb-lg">
-                  <Col lg="8">
-                    <h2 id="heading" className="display-3">
-                      Our Team
-                    </h2>
-                  </Col>
-                </Row>
-                <Row className="justify-content-center text-center mb-lg">
-                  <Col className="mb-4 mb-lg-0" md="4">
-                    <div className="px-4">
-                      <img
-                        alt="..."
-                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                        src={AsthaImage}
-                        style={{ width: "300px" }}
-                      />
-                      <div className="pt-4 text-center">
-                        <h5 className="title">
-                          <span className="d-block mb-1">Astha Rai</span>
-                        </h5>
-                        <h6 className="title">
-                          <span className="d-block mb-10">Co-Founder</span>
-                        </h6>
-                      </div>
+            <section style={{backgroundColor: '#FCFAD9'}} className="section section-lg">
+            <Container>
+              <Row className="justify-content-center text-center mb-lg">
+                <Col lg="8">
+                  <h2 id="heading" className="display-3">Our Team</h2>
+                </Col>
+              </Row>
+              <Row className="justify-content-center text-center mb-lg">
+                <Col className="mb-4 mb-lg-0" md="4">
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={AsthaImage}
+                      style={{ width: "300px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span className="d-block mb-1">Astha Rai</span>
+                      </h5>
+                      <h6 className="title">
+                        <span className="d-block mb-10">Co-Founder</span>
+                      </h6>
+                    </div>
                     </div>
                   </Col>
                   <Col className="mb-4 mb-lg-0" md="4">

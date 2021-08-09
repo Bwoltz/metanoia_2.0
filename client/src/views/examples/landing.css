@@ -1,146 +1,62 @@
 @font-face {
-  font-family: "Acme";
-  src: url("./Acme-Regular.ttf");
+    font-family: 'Acme';
+    src: url('./Acme-Regular.ttf');
 }
 
 #mainTitle {
-  color: #ac3791;
-  font-size: 60pt;
-  font-family: Acme;
+    color: #AC3791;
+    font-size: 60pt;
+    font-family: Acme;
 }
 
 #secondaryText {
-  color: #e3f8fe;
-  font-size: 22px;
+    color: #E3F8FE;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 #navBarLogo {
-  width: 200px;
-  height: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 #getStartedBtn {
-  background-color: #ac3791;
+    background-color: #AC3791;
 }
-/*
+
 #getStartedText {
- 
+    font-family: Acme;
+    color: white;
 }
-*/
 
 #signUpTitle {
-  color: #ac3791;
-  font-family: Acme;
+    color: #AC3791;
+    font-family: Acme;
 }
 
 #subscribeBtn {
-  background-color: #ac3791;
-  font-family: Acme;
-  color: white;
-  border-radius: 40px;
+    background-color: #505F98;
+    color: white;
 }
 
 #sectionHeading {
-  color: #ac3791;
-  font-family: Acme;
+    color: #AC3791;
+    font-family: Acme;
 }
 
 #beliefs {
-  font-family: Acme;
+    font-family: Acme;
 }
 
 .cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.bannerStyles {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.roundEdges {
-  border-radius: 40px;
-}
-
-.button {
-  font-family: Acme;
-  color: white;
-  min-width: 200px;
-  min-height: 50px;
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
-  font-weight: 700;
-  background: #ac3791;
-  background: linear-gradient(90deg, #ac3791 #ac3791);
-  border: none;
-  border-radius: 1000px;
-  box-shadow: 12px 12px 24px #ac3791;
-  transition: all 0.3s ease-in-out 0s;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-}
-
-.button::before {
-  content: "";
-  border-radius: 1000px;
-  min-width: calc(200px + 12px);
-  min-height: calc(50px + 12px);
-  border: 6px solid #ac3791;
-  box-shadow: 0 0 60px #ac3791;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.button:hover,
-.button:focus {
-  transform: translateY(-6px);
-  background-color: #ac3791;
-  color: white;
-}
-
-.button:hover::before,
-.button:focus::before {
-  opacity: 1;
-}
-
-.button::after {
-  content: "";
-  border-radius: 100%;
-  border: 6px solid #ac3791;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 3.5s infinite;
-  background-color: #ac3791;
-}
-
-.button:hover::after,
-.button:focus::after {
-  animation: none;
-  display: none;
-}
-
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
-  100% {
-    width: 200px;
-    height: 150px;
-    opacity: 0;
+  
+  .bannerStyles {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
-}
