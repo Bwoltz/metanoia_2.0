@@ -15,5 +15,5 @@
   "dependencies": {
     "concurrently": "^6.2.0",
     "express": "^4.17.1"
-  },
+  }
 }
