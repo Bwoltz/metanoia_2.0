@@ -1,6 +1,8 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
+import Problem from "./Problem.jsx";
+import Solution from "./Solution.jsx";
 
 // reactstrap components
 import {
@@ -423,6 +425,14 @@ class Landing extends React.Component {
             style={{ backgroundColor: "#FFFEF5" }}
             className="section section-lg"
           >
+            <Container>
+              <div style={{ paddingBottom: 100 }}>
+                <Problem />
+              </div>
+              <div style={{ paddingBottom: 50 }}>
+                <Solution />
+              </div>
+            </Container>
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
